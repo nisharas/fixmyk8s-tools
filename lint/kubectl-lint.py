@@ -87,4 +87,4 @@ What it fixes:
         """)
     else:
         # Your existing linter function call
-        heal_manifest(sys.argv[1])
+        linter_engine(sys.argv[1])
