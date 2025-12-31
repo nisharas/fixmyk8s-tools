@@ -70,7 +70,21 @@ def linter_engine(file_path):
         print(f"\n[CRITICAL ERROR] Auto-heal failed: {e}")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: kubectl lint <file.yaml>")
+    if len(sys.argv) < 2 or sys.argv[1] in ["-h", "--help"]:
+        print("""
+🩺 kubectl-lint: The K8s Manifest Healer
+
+Usage:
+  kubectl lint <filename.yaml>
+
+Options:
+  -h, --help    Show this help menu
+
+What it fixes:
+  - Converts tabs to 2 spaces
+  - Fixes indentation for lists and keys
+  - Adds missing spaces after colons (e.g. image:nginx -> image: nginx)
+        """)
     else:
-        linter_engine(sys.argv[1])
+        # Your existing linter function call
+        heal_manifest(sys.argv[1])
