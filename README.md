@@ -23,7 +23,7 @@ You don't need Python or any dependencies to use these tools. Simply download th
 ### **Quick Install (Linux/macOS)**
 ```bash
 # 1. Download the latest binary
-curl -LO [https://github.com/YOUR_USERNAME/fixmyk8s-tools/releases/download/v1.0.0/kubectl-lint](https://github.com/YOUR_USERNAME/fixmyk8s-tools/releases/download/v1.0.0/kubectl-lint)
+curl -LO https://github.com/nisharas/fixmyk8s-tools/releases/download/v1.0.0/kubectl-lint
 
 # 2. Make it executable
 chmod +x kubectl-lint
