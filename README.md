@@ -28,6 +28,7 @@ The "Space-Injection" Engine: Fixes image:nginx into image: nginx instantly.
 Structure Normalization: Converts illegal tabs and messy indentations into the K8s-standard 2-space format.
 
 Visual Diff Report: Shows you exactly what was fixed in green (added) and red (removed) before saving.
+
 ---
 
 ## 🚀 Getting Started (Installing kubectl-lint)
